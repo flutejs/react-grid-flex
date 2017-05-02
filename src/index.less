@@ -1,0 +1,25 @@
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}
+.antd-container-float {
+  .clearfix();
+}
+.antd-container-float-left {
+  float: left;
+}
+.antd-container-float-right {
+  float: right;
+}
+
+.antd-container-flex {
+  display: flex;
+  width: auto;
+}
