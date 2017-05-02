@@ -3,7 +3,7 @@ import './index.less';
 import CRow from './CRow';
 import CCol from './CCol';
 
-export {
+export default {
   CRow,
   CCol,
 };
