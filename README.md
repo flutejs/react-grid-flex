@@ -2,13 +2,16 @@
 
 [![NPM version][npm-version]][npm-url]
 [![NPM downloads][npm-download]][npm-url]
-[![Node version][node-version]][npm-url]
 
 [npm-version]: https://img.shields.io/npm/v/antd-container.svg?style=flat
 [npm-download]: http://img.shields.io/npm/dm/antd-container.svg?style=flat
 [npm-url]: https://npmjs.org/package/antd-container
 
 Smart Layout Component
+
+## Demo
+
+![demo](https://zos.alipayobjects.com/rmsportal/lPjOBOjBywoOZpCDPpfH.png)
 
 ## How to use
 
