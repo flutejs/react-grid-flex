@@ -1,105 +1,51 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { Icon } from 'antd';
 
-import { CRow, CCol } from '../src';
 import './index.less';
 
-const App = () => <div className="demo-w">
-  <div className="demo-c">
+import { Row, Col } from '../src';
+
+const App = ()=> <div>
+  <div>
+    <h1>Empty</h1>
+    <Row>
+      <Col width="auto"/>
+      <Col width={100}/>
+    </Row>
+  </div>
+  <div>
     <h1>Normal Row</h1>
-    <CRow>
-      hello
-    </CRow>
+    <Row>
+      <Col />
+      <Col />
+    </Row>
   </div>
-
-  <div className="demo-c">
-    <h1>Normal Col</h1>
-    <CRow>
-      <CCol>
-        <Icon type="smile-o" />
-      </CCol>
-      <CCol>
-        <Icon type="smile-o" />
-      </CCol>
-      <CCol>
-        <Icon type="smile-o" />
-      </CCol>
-      <CCol>
-        <Icon type="smile-o" />
-      </CCol>
-    </CRow>
+  <div>
+    <h1>Fixed width</h1>
+    <Row>
+      <Col width="auto"/>
+      <Col width={100}/>
+    </Row>
   </div>
-
-  <div className="demo-c">
+  <div>
     <h1>Grid</h1>
-    <CRow mode="grid" gutter={16}>
-      <CCol span={6}>
-        <div>
-          <Icon type="smile-o" />
-        </div>
-      </CCol>
-      <CCol span={6}>
-        <div>
-          <Icon type="smile-o" />
-        </div>
-      </CCol>
-      <CCol span={6}>
-        <div>
-          <Icon type="smile-o"/>
-        </div>
-      </CCol>
-      <CCol span={6}>
-        <div>
-          <Icon type="smile-o" />
-        </div>
-      </CCol>
-    </CRow>
+    <Row>
+      <Col width="33.33333%"/>
+      <Col width="33.33333%"/>
+      <Col width="33.33333%"/>
+    </Row>
   </div>
-
-  <div className="demo-c">
-    <h1>Float</h1>
-    <CRow mode="float">
-      <CCol left>
-        <Icon type="smile-o" />
-      </CCol>
-      <CCol right>
-        <Icon type="smile-o" />
-      </CCol>
-      <CCol left>
-        <Icon type="smile-o" />
-      </CCol>
-      <CCol right>
-        <Icon type="smile-o" />
-      </CCol>
-    </CRow>
+  <div>
+    <h1>Align</h1>
+    <Row>
+      <Col width="auto"/>
+      <Col width={100} x="right" y="center"/>
+    </Row>
   </div>
-
-  <div className="demo-c">
-    <h1>Flex</h1>
-    <CRow mode="flex">
-      <CCol width="auto">
-        <Icon type="smile-o" />
-      </CCol>
-      <CCol width={200}>
-        <Icon type="smile-o" />
-      </CCol>
-      <CCol width="self">
-        <Icon type="smile-o" />
-      </CCol>
-      <CCol width="auto">
-        <Icon type="smile-o" />
-      </CCol>
-    </CRow>
-  </div>
-
-  <div className="demo-c demo-c-middle">
+  <div>
     <h1>Middle</h1>
-    <CRow mode="flex" x="center" y="center" style={{height:200}}>
-      <Icon type="smile-o" />
-    </CRow>
+    <Row x="center" y="center"/>
   </div>
-
 </div>;
 
 /* eslint no-undef:0 */

@@ -1,9 +1,9 @@
 import './index.less';
 /* eslint import/extensions:0 */
-import CRow from './CRow';
-import CCol from './CCol';
+import Row from './Row';
+import Col from './Col';
 
 export default {
-  CRow,
-  CCol,
+  Row,
+  Col,
 };

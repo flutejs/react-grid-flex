@@ -1,8 +1,8 @@
 {
-  "name": "antd-container",
-  "version": "0.1.2",
+  "name": "react-grid-flex",
+  "version": "1.0.0",
   "description": "",
-  "author": "64450615@qq.com",
+  "author": "nikogu",
   "main": "lib/index.js",
   "entry": {
     "index": "./demo/index.jsx"
