@@ -1,63 +1,63 @@
-# antd-container
+# react-grid-flex
 
 [![NPM version][npm-version]][npm-url]
 [![NPM downloads][npm-download]][npm-url]
 
-[npm-version]: https://img.shields.io/npm/v/antd-container.svg?style=flat
-[npm-download]: http://img.shields.io/npm/dm/antd-container.svg?style=flat
-[npm-url]: https://npmjs.org/package/antd-container
+[npm-version]: https://img.shields.io/npm/v/react-grid-flex.svg?style=flat
+[npm-download]: http://img.shields.io/npm/dm/react-grid-flex.svg?style=flat
+[npm-url]: https://npmjs.org/package/react-grid-flex
 
-Smart Layout Component
-
-## Demo
-
-![demo](https://zos.alipayobjects.com/rmsportal/lPjOBOjBywoOZpCDPpfH.png)
+Easy way to use flex in react.
 
 ## How to use
 
 ```javascript
-import { CRow, CCol } from 'antd-container';
+import { Row, Col } from 'react-grid-flex';
 
-// Normal Row
-<CRow>
-    hello
-</CRow>
+<div>
+  <h1>Empty</h1>
+  <Row>
+    <Col width="auto" />
+    <Col width={100} />
+  </Row>
+</div>
 
-// Normal Col
-<CRow>
-  <CCol> 1 </CCol>
-  <CCol> 2 </CCol>
-  <CCol> 3 </CCol>
-  <CCol> 4 </CCol>
-</CRow>
+<div>
+  <h1>Normal Row</h1>
+  <Row>
+    <Col />
+    <Col />
+  </Row>
+</div>
 
-// Grid
-<CRow mode="grid" gutter={16}>
-  <CCol span={6}> 1 </CCol>
-  <CCol span={6}> 2 </CCol>
-  <CCol span={4}> 3 </CCol>
-  <CCol span={8}> 4 </CCol> 
-</CRow>
+<div>
+  <h1>Fixed width</h1>
+  <Row>
+    <Col width="auto" />
+    <Col width={100} />
+  </Row>
+</div>
 
-// Float
-<CRow mode="float">
-  <CCol left> 1 </CCol>
-  <CCol right> 2 </CCol>
-  <CCol left> 3 </CCol>
-  <CCol right> 4 </CCol>
-</CRow>
+<div>
+  <h1>Grid</h1>
+  <Row>
+    <Col width="33.33333%" />
+    <Col width="33.33333%" />
+    <Col width="33.33333%" />
+  </Row>
+</div>
 
-// Flex
-<CRow mode="flex">
-  <CCol width="auto"> 1 </CCol>
-  <CCol width={200}> 2 </CCol>
-  <CCol width="self"> 3 </CCol>
-  <CCol width="auto"> 4 </CCol>
-</CRow>
+<div>
+  <h1>Align</h1>
+  <Row>
+    <Col width="auto" />
+    <Col width={100} x="right" y="center" />
+  </Row>
+</div>
 
-// Middle
-<CRow mode="flex" x="center" y="center" style={{height:200}}>
-    1
-</CRow>
+<div>
+  <h1>Middle</h1>
+  <Row x="center" y="center" />
+</div>
 ```
 
